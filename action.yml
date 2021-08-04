@@ -1,0 +1,16 @@
+name: 'Update Release Artifact'
+description: 'Updates the release artifact based on the supplied workflow artifact'
+inputs:
+  workflow:
+    required: true
+  workflow_commit:
+    required: true
+  artifact_name:
+    required: true
+  release_id:
+    required: true
+  GITHUB_TOKEN:
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
