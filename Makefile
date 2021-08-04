@@ -11,4 +11,4 @@ build:
 
 .PHONY: shell
 shell:
-	@$(DOCKER) -it $(IMAGE) sh\
+	@$(DOCKER) -it $(IMAGE) sh
