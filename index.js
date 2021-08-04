@@ -27,10 +27,9 @@ const findWorkflowRunArtifactId = async (
       owner,
       repo,
       workflow_id: workflow,
-      status: 'completed,success',
     }
   )) {
-    const run = runs.data.find(r => r.head_sha === workflowCommit);
+    const run = runs.data.find(r => r.head_sha === workflowCommit && r.conclusion === 'success');
     if (run) {
       const artifacts =
         await octokit.actions.listWorkflowRunArtifacts({
