@@ -8,8 +8,7 @@
   },
   "dependencies": {
     "@actions/core": "^1.4.0",
-    "@octokit/action": "^3.14.1",
-    "adm-zip": "^0.5.5"
+    "@octokit/action": "^3.14.1"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.24.1"
